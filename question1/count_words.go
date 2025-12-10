@@ -5,6 +5,8 @@ import (
 	"sync"
 )
 
+// --- question 1 ---
+// 这个函数是否有问题？为什么？请修复它。
 // countWords counts occurrences of each word concurrently.
 func countWords(words []string) map[string]int {
     counts := make(map[string]int)
@@ -25,6 +27,7 @@ func Run_countWords(){
     result := countWords(words)
     fmt.Println("Word counts:", result)
 }
+// --- question 1 end ---
 
 func countWordsWithLock(words []string) map[string]int {
         counts := make(map[string]int)
